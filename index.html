@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080a12">
+  <meta name="description" content="FOCUS FLOW - Your personal study space">
+  <title>FOCUS FLOW</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">F</span><span>FOCUS<span class="brand-light">FLOW</span></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <button class="nav-item active" data-page="home"><span>◈</span> Overview</button>
+      <button class="nav-item" data-page="timer"><span>◷</span> Focus timer</button>
+      <button class="nav-item" data-page="tasks"><span>✓</span> Tasks</button>
+      <button class="nav-item" data-page="notes"><span>▤</span> Notes</button>
+      <button class="nav-item" data-page="analytics"><span>▥</span> Analytics</button>
+      <div class="side-bottom">
+        <button class="nav-item" data-page="settings"><span>⚙</span> Settings</button>
+        <div class="creator">DEVELOPED BY NATIONVK<br><b>YEASIEN AHMED</b></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div><div class="eyebrow" id="today-label">YOUR PERSONAL STUDY SPACE</div><h1 id="page-title">Overview</h1></div>
+        <div class="top-actions">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">☼</button>
+          <button class="avatar" id="quick-focus" aria-label="Start focus">Y</button>
+        </div>
+      </header>
+      <div id="view" class="view"></div>
+      <footer>FOCUS FLOW <span>·</span> FIND YOUR OWN PATH</footer>
+    </main>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
