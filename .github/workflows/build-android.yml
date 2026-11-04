@@ -26,7 +26,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -43,11 +42,11 @@ jobs:
           SDKMANAGER=$(find "$ANDROID_HOME" -type f -name sdkmanager | head -n 1)
 
           if [ -z "$SDKMANAGER" ]; then
-            echo "ERROR: Android SDK manager not found."
+            echo "ERROR: Android SDK manager not found"
             exit 1
           fi
 
-          echo "Using SDK Manager: $SDKMANAGER"
+          echo "SDK Manager: $SDKMANAGER"
 
           yes | "$SDKMANAGER" --licenses || true
 
