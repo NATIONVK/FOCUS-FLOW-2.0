@@ -1,0 +1,6 @@
+{
+  "appId": "com.nationvk.focusflow",
+  "appName": "FOCUS FLOW",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
